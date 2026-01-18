@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-900: oklch(21% 0.034 264.665);
     --color-black: #000;
@@ -206,6 +207,9 @@
   .ml-\[0px\] {
     margin-left: 0px;
   }
+  .ml-\[2\] {
+    margin-left: 2;
+  }
   .ml-\[10px\] {
     margin-left: 10px;
   }
@@ -260,6 +264,15 @@
   .ml-\[155px\] {
     margin-left: 155px;
   }
+  .ml-\[200\] {
+    margin-left: 200;
+  }
+  .ml-\[200px\] {
+    margin-left: 200px;
+  }
+  .ml-\[250px\] {
+    margin-left: 250px;
+  }
   .block {
     display: block;
   }
@@ -278,6 +291,9 @@
   .h-\[320px\] {
     height: 320px;
   }
+  .h-\[400px\] {
+    height: 400px;
+  }
   .h-\[700px\] {
     height: 700px;
   }
@@ -286,6 +302,18 @@
   }
   .h-screen {
     height: 100vh;
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
+  }
+  .w-\[80\%\] {
+    width: 80%;
+  }
+  .w-\[80\] {
+    width: 80;
   }
   .w-\[80px\] {
     width: 80px;
@@ -314,6 +342,9 @@
   .w-\[250px\] {
     width: 250px;
   }
+  .w-\[300px\] {
+    width: 300px;
+  }
   .w-\[310px\] {
     width: 310px;
   }
@@ -322,6 +353,12 @@
   }
   .w-\[430px\] {
     width: 430px;
+  }
+  .w-\[500px\] {
+    width: 500px;
+  }
+  .w-\[600px\] {
+    width: 600px;
   }
   .w-\[630px\] {
     width: 630px;
@@ -399,6 +436,9 @@
       background-color: color-mix(in oklab, var(--color-black) 70%, transparent);
     }
   }
+  .bg-blue-600 {
+    background-color: var(--color-blue-600);
+  }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
@@ -440,6 +480,9 @@
   }
   .pt-\[50px\] {
     padding-top: 50px;
+  }
+  .pt-\[100px\] {
+    padding-top: 100px;
   }
   .pt-\[200px\] {
     padding-top: 200px;
@@ -494,6 +537,9 @@
   }
   .text-\[\#1178B280\] {
     color: #1178B280;
+  }
+  .text-\[40pxx\] {
+    color: 40pxx;
   }
   .text-gray-900 {
     color: var(--color-gray-900);
@@ -721,11 +767,6 @@
   .lg\:ml-\[710px\] {
     @media (width >= 64rem) {
       margin-left: 710px;
-    }
-  }
-  .lg\:ml-\[q0px\] {
-    @media (width >= 64rem) {
-      margin-left: q0px;
     }
   }
   .lg\:block {
